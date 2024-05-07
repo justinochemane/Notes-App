@@ -8,6 +8,7 @@ function addNewNote(text = '') {
 
   note.innerHTML = `
         
+    
     <div class="tools">
         <button class="edit"><i class="fas fa-edit"></i></button>
         <button class="delete"><i class="fas fa-trash-alt"></i></button>
@@ -20,7 +21,7 @@ function addNewNote(text = '') {
   const editBtn = note.querySelector(".edit");
   const deleteBtn = note.querySelector(".delete");
   const main = note.querySelector(".main");
-  textArea = note.querySelector(".textarea");
+  const textArea = note.querySelector(".textarea");
 
   textArea.value = text
   main.innerHTML = marked(text)
